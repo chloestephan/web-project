@@ -1,0 +1,110 @@
+/* -------------------- for the page overall --------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------ Top photo in the index page -------------------*/
+.front-photo{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------------------------- body ----------------------------- */
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 25px;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+        padding:5px;
+    }
+
+    img {
+        resize: both;
+        width: 100%;
+    }
+}
+
+/* line that separates the header with the main part of the page */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-radius: 3em;
+    border-top: 3px solid #d86f92;
+    margin: 1em 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+/* write titles */
+h2 { 
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 70px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center; 
+}
+
+
+h3 { 
+    color: #111; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 30px; 
+    font-weight: 300; 
+    line-height: 32px; 
+    margin: 0 0 10px; 
+    text-align: center; 
+}
+
+h4 { 
+    color: #111; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 30px; 
+    font-weight: 300; 
+    margin-top: 10px;
+}
+
+h5 {
+    color: #111; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 45px; 
+    font-weight: 300; 
+    line-height: 32px; 
+    margin-top: 50px;
+    text-align: center; 
+}
+
+/* write in the texts */
+p { 
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 20px; 
+    line-height: 24px; 
+    margin: 0 0 24px; 
+    text-align: justify; 
+    text-justify: inter-word; 
+}
+
+img {   
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+}

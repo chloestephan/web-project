@@ -1,0 +1,116 @@
+/* ----------------------------- footer ----------------------------- */
+main {
+    min-height: 100hv;
+    /* need a solid bg to hide the footer */
+    background: white;
+    /* put on top */
+    position: relative;
+    z-index: 1;
+    font: 16px/1.4 system-ui, sans-serif;
+    padding: 2rem;
+}
+
+body {
+    margin: 0;
+}
+
+/* ----------------------------- overall footer ----------------------------- */
+.footer-distributed {
+  background-color: palevioletred;
+  box-sizing: border-box;
+  width: 100%;
+
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+/* ----------------------------- footer : left part ----------------------------- */
+/* police d'ecriture */
+.footer-distributed .footer-left p {
+  color: white;
+  font-size: 14px;
+}
+
+/* manage the display of the left part of the footer (the links) */
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 10px;
+}
+
+/* manage the display of each element */
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: white;
+}
+
+/* add a dot between each link */
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  padding-right: 7px;
+}
+
+/* remove the dot before the first link (index) */
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* when hovered over : the link gets underlined */
+.footer-distributed p.footer-links a:hover{
+  text-decoration:underline;
+}
+
+/* ----------------------------- footer : right part ----------------------------- */
+/* manage the display of the right part of the footer (social medias) */
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+/* manage the display of each element */
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+
+  line-height: 35px;
+  margin-left: 3px;
+
+  transition:all .25s;
+}
+
+/* when hovered over : it gets a bit bigger by 1.1 ratio */
+.footer-distributed .footer-right a:hover{
+    transform:scale(1.1); 
+    -webkit-transform:scale(1.1);
+}
+
+/* ----------------------------- Media Queries ----------------------------- */
+/* adapt the display to the size of the window */
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
