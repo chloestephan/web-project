@@ -14,7 +14,7 @@ body {
 	box-sizing:border-box;
 	box-shadow: 0 0 7px 0 hsla(0, 0%, 0%, 0.15);
 	height: 80px;
-	background-color: palevioletred;
+	background-color: #d87093;
 }
 
 .header .header-container {
@@ -54,6 +54,7 @@ body {
 	text-decoration:none;
 	color: #33383b;
 	line-height:1;
+	
 }
 
 .header .header-container nav a.selected {
@@ -67,11 +68,12 @@ body {
 	transform: scale(1.2);
 }
 
-/* Making the header responsive to the width of the page */
+
+
 @media all and (max-width: 600px) {
 	.header {
 		padding: 20px 0;
-		height: 85px;
+		height: 120px;
     }
     
 	.header .header-container h1 {
@@ -83,13 +85,11 @@ body {
 	}
 
 	.header .header-container nav {
-		line-height: 1;
+		line-height: 2;
 		float:none;
 	}
 
 	.header .header-container nav a {
-		font-size: 13px;
+		font-size: 17px;
 	}
 }
-
-/* For the headers to look good, be sure to reset the margin and padding of the body */

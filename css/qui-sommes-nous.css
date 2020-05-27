@@ -56,7 +56,6 @@ color: grey;
     }
 }
 
-
 /* writing styles */
 h2 { 
     color: #111; 
@@ -80,7 +79,14 @@ hr {
     border-top: 3px solid palevioletred;
     margin: 1em 0;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 5px;
 }
 
+p {
+    font-size: 20px;
+}
+
+.align-center {
+    text-align: center;
+}

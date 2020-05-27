@@ -41,6 +41,11 @@ img {
     clear: both;
 }
 
+#preping {
+    width: 100%;
+    text-align: left;
+}
+
 /* ------------------ writing styles ------------------ */
 h2 {
     width: 100%; 
@@ -56,7 +61,7 @@ h2 span {
     padding:0 10px; 
 }
 
-/* Section/Article */
+/* overall text */
 
 .align-center {
     text-align: center;
@@ -226,6 +231,8 @@ h2 span {
     border-style: solid;
     border-collapse: collapse;
     border-color: #33383b;
+
+    box-shadow: 3px 3px lightgray;
 }
 
 .box .image.fit {
@@ -299,4 +306,3 @@ h2 span {
 .image.main img {
     width: 100%;
 }
-
