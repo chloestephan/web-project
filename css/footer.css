@@ -32,6 +32,10 @@ body {
   font-size: 16px;
 }
 
+.p-footer {
+  margin-left: 0px;
+}
+
 /* manage the display of the left part of the footer (the links) */
 .footer-distributed p.footer-links {
   font-size: 22px;
@@ -72,19 +76,19 @@ body {
 .footer-distributed .footer-right {
   float: right;
   margin-top: 6px;
-  max-width: 180px;
+  max-width: 200px;
 }
 
 /* manage the display of each element */
 .footer-distributed .footer-right a {
   display: inline-block;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
 
   background-color: #33383b;
   border-radius: 2px;
 
-  font-size: 22px;
+  font-size: 24px;
   color: #ffffff;
   text-align: center;
 
