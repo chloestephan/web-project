@@ -71,10 +71,6 @@ body {
 
 
 @media all and (max-width: 600px) {
-	.header {
-		padding: 20px 0;
-		height: 120px;
-    }
     
 	.header .header-container h1 {
 		float: none;
@@ -91,5 +87,12 @@ body {
 
 	.header .header-container nav a {
 		font-size: 17px;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.header {
+		padding: 40px;
+		height: 150px;
 	}
 }

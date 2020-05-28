@@ -6,12 +6,12 @@
 }
 
 #photo-row {
-    background-image: url("../img/acrylic/acrylic.png");
+    background-image: url("../img/fibre-de-verre/glassfiber.png");
     background-repeat: no-repeat;
     background-size: cover;
 
     background-color: #cccccc;
-    height: 500px;
+    height: 400px;
     width: 100%;
 }
 
@@ -32,18 +32,30 @@ h3 {
     font-family: 'Open Sans', sans-serif; 
     font-size: 30px; 
     font-weight: 300; 
-    line-height: 32px; 
-    margin: 0 0 72px; 
+    /*line-height: 32px; 
+    margin: 0 0 40px; */
+    line-height: 0.1em;
+    margin: 30px 0 30px;
     text-align: center; 
+
+    width: 100%;
+    border-bottom: 2px solid #d86f92; 
+}
+ 
+h3 span { 
+    background:#fff; 
+    padding:0 10px; 
 }
 
 /* write in the texts */
 p { 
     color: #111;
     font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 14px; 
+    font-size: 19px; 
     line-height: 24px; 
     margin: 0 0 24px; 
+    margin-left: 300px;
+    margin-right: 300px;
     text-align: justify; 
     text-justify: inter-word; 
 }
@@ -58,4 +70,38 @@ hr {
     padding: 0;
     margin-top: 30px;
     margin-bottom: 5px;
+}
+
+
+@media screen and (max-width:600px) {
+    img {
+        resize: both;
+        max-width: 100%;
+    }
+
+    #photo-row {
+        width: 100%;
+    }
+
+    p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h3 {
+        line-height: 60px;
+        border-bottom: white;
+
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+	p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
