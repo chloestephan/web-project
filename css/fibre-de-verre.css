@@ -97,11 +97,23 @@ hr {
     h2 {
         font-size: 80px;
     }
+
+    iframe {
+        max-width: 100%;
+        width: 400px;
+        height: 200px;
+    }
 }
 
 @media all and (max-width: 1200px) {
 	p {
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    iframe {
+        max-width: 100%;
+        width: 600px;
+        height: 350px;
     }
 }
