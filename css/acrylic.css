@@ -22,15 +22,22 @@ h2 {
     text-align: center; 
 }
 
-
 h3 { 
-    color: #111; 
+    color: #d86f92; 
     font-family: 'Open Sans', sans-serif; 
     font-size: 30px; 
     font-weight: 300; 
-    line-height: 20px; 
-    margin: 0 0 25px; 
+    line-height: 0.1em;
+    margin: 30px 0 30px;
     text-align: center; 
+
+    width: 100%;
+    border-bottom: 2px solid #33383b; 
+}
+ 
+h3 span { 
+    background:#fff; 
+    padding:0 10px; 
 }
 
 /* write in the texts */
@@ -70,5 +77,36 @@ hr {
     clear: both;
 }
 
+.check-box {
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:#d86f92;
+	background-color:#d86f92;
+	border-radius:6px;
+	border:1px solid #33383b;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 6px;
+	margin-right: 5px;
+	text-shadow:0px 1px 0px #b23e35;
+}
 
 
+/* media queries */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 100%;
+    }
+
+    h3 {
+        line-height: 1.5em;
+        border-bottom-color: white;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 700px;
+    }
+}
