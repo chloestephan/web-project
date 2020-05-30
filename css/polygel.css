@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+.banniere {   
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
 
 #photo-row {
     background-image: url("../img/polygel/polygel.png");
@@ -29,24 +34,34 @@ h2 {
 
 
 h3 { 
-    color: #111; 
+    color: #33383b; 
     font-family: 'Open Sans', sans-serif; 
     font-size: 30px; 
     font-weight: 300; 
-    line-height: 32px; 
-    margin: 0 0 72px; 
+    line-height: 0.1em;
+    margin: 30px 0 30px;
     text-align: center; 
+
+    width: 100%;
+    border-bottom: 2px solid #d86f92; 
+}
+ 
+h3 span { 
+    background:#fff; 
+    padding:0 10px; 
 }
 
 /* write in the texts */
 p { 
     color: #111;
     font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 14px; 
+    font-size: 18px; 
     line-height: 24px; 
     margin: 0 0 24px; 
     text-align: justify; 
     text-justify: inter-word; 
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
 hr {
@@ -61,23 +76,20 @@ hr {
     margin-bottom: 5px;
 }
 
-iframe {
-    margin: 15px;
+#row-photo {
+    display: inline-block;
+}
+
+.photo {
+    max-width: 50%;
+    max-height: 500px;
+    margin-left: 50px;
 }
 
 /* media queries */
 @media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-
     h3 {
         line-height: 1.5em;
         border-bottom-color: white;
-    }
-
-    iframe {
-        width: 100%;
-        max-width: 31%;
     }
 }
