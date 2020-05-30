@@ -5,14 +5,10 @@
     box-sizing: border-box;
 }
 
-#photo-row {
-    background-image: url("../img/acrylic/acrylic.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-color: #cccccc;
-    height: 500px;
+.banniere {   
+    height: auto;
     width: 100%;
+    max-width: 100%;
 }
 
 /* write titles */
@@ -32,8 +28,8 @@ h3 {
     font-family: 'Open Sans', sans-serif; 
     font-size: 30px; 
     font-weight: 300; 
-    line-height: 32px; 
-    margin: 0 0 72px; 
+    line-height: 20px; 
+    margin: 0 0 25px; 
     text-align: center; 
 }
 
@@ -58,6 +54,20 @@ hr {
     padding: 0;
     margin-top: 30px;
     margin-bottom: 5px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+    padding: 20px;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 

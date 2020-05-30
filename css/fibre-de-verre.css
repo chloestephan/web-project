@@ -5,16 +5,6 @@
     box-sizing: border-box;
 }
 
-#photo-row {
-    background-image: url("../img/fibre-de-verre/glassfiber.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-color: #cccccc;
-    height: 400px;
-    width: 100%;
-}
-
 /* write titles */
 h2 { 
     color: #111; 
@@ -32,8 +22,6 @@ h3 {
     font-family: 'Open Sans', sans-serif; 
     font-size: 30px; 
     font-weight: 300; 
-    /*line-height: 32px; 
-    margin: 0 0 40px; */
     line-height: 0.1em;
     margin: 30px 0 30px;
     text-align: center; 
@@ -89,7 +77,7 @@ hr {
     }
 
     h3 {
-        line-height: 60px;
+        line-height: 40px;
         border-bottom: white;
 
     }
@@ -103,6 +91,12 @@ hr {
         width: 400px;
         height: 200px;
     }
+}
+
+.banniere {   
+    height: auto;
+    width: 100%;
+    max-width: 100%;
 }
 
 @media all and (max-width: 1200px) {
