@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 #photo-row {
     background-image: url("../img/polygel/polygel.png");
     background-repeat: no-repeat;
@@ -58,4 +59,25 @@ hr {
     padding: 0;
     margin-top: 30px;
     margin-bottom: 5px;
+}
+
+iframe {
+    margin: 15px;
+}
+
+/* media queries */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    h3 {
+        line-height: 1.5em;
+        border-bottom-color: white;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 31%;
+    }
 }
