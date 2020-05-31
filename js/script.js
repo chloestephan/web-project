@@ -1,3 +1,4 @@
+/*---------------------- change background color ----------------------*/
 
 /* changes the background color of the main part of the "your turn" page*/
 var color =["#ff0000", "#ffa500", "#ffff00", "#90ee90", "#008000", "#40e0d0","#0000ff","#dda0dd","#ffb6c1" ,"#ffffff"];
@@ -7,14 +8,14 @@ document.querySelector("button").addEventListener("click", function(){
   document.querySelector("main").style.background = color[i]
 })
 
-/* make element dragable */
+/*---------------------- make element dragable ----------------------*/
 // Make the DIV element draggable:
 dragElement(document.getElementById("moving-div"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
-    // if present, the header is where you move the DIV from:
+    // if present, the header of the element is where you move the DIV from:
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
@@ -52,7 +53,7 @@ function closeDragElement() {
   }
 }
 
-/* guessing game */
+/*---------------------- guessing game ----------------------*/
 // random value generated 
 var y = Math.floor(Math.random() * 10 + 1); 
       
@@ -78,3 +79,14 @@ document.getElementById("submitguess").onclick = function(){
     alert("Oops! Try a bigger number") 
   } 
 }
+
+/*---------------------- Make header sticky ----------------------*/
+document.getElementsByClassName("header-button").onclick = function(){
+  document.getElementsByClassName('header-container').position='sticky';
+}
+
+
+
+
+
+
