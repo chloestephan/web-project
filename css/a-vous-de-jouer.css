@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffb6c1;
+}
+
+main {
+    background: #ffffff;
+}
+
 .banniere {   
     height: auto;
     width: 100%;
@@ -62,3 +72,34 @@ hr {
     margin-top: 30px;
     margin-bottom: 5px;
 }
+
+button {
+    
+    padding: 10px;
+    background: #d86f92;
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*  */
+#moving-div {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+  
+#moving-display {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #d86f92;
+    color: #fff;
+}
+
+/* guessing game */
