@@ -36,35 +36,50 @@
         <main id = "main">
             <h2>Your turn !</h2>
             <hr>
+
             <div>
                 <h3><span>Idea 1</span></h3>
-                <p>Allow to user to change the color of the footer on all pages</p>
-                <p>Allow the user to go back to the original color</p>
-                <p>Selection of colors: blue, orange, red, grey</p>
+                <!--inspo : https://www.dulux.co.uk/en/colour-details/h_lime-->
+                <button>switch colors</button>
             </div>
+
             <div>
                 <h3><span>Idea 2</span></h3>
                 <p>Make the header sticky on all pages</p>
             </div>
-            <div>
+
+            <div style="height: 70px;">
                 <h3><span>Idea 3</span></h3>
-                <p>Move divisions around</p>
+                <!-- Draggable DIV -->
+                <div id="moving-div">
+                    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                    <div id="moving-display">Hello, move me :D </div>     
+                </div>
             </div>
+            <div>
+
+            <div>
+                <h3><span>Guessing game</span></h3>
+                <p>We have selected a random number between 1 - 10. <br>See if you can guess it.</p> 
+                <div class="form"> 
+                    <label for="guessField">Enter a guess: </label> 
+                    <input type = "text" id = "guessField" class = "guessField"> 
+                    <input type = "submit" value = "Submit guess" class = "guessSubmit" id = "submitguess"> 
+                </div> 
+            </div>
+
             <div>
                 <h3><span>Idea 4</span></h3>
-                <p>Change the title of the page</p>
-            </div>
-            <div>
-                <h3><span>Idea 5</span></h3>
-                <p>Loof for 'a' in this page and highlight it</p>
+                <p>Loof for 'o' in this page and highlight it</p>
                 <p>Click on this button to highlight all the 'o' of this page:</p>
                 <button>Click on me</button>
             </div>
         </main>
     </body>
 
-    <iframe src="footer.html" seamless scrolling="no"></iframe>
+    <iframe id="footer" src="footer.html" seamless scrolling="no"></iframe>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8" src="js/script.js"></script>
 
 </html>
