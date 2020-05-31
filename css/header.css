@@ -10,6 +10,7 @@ body {
 }
 
 .header{
+	position: none;
 	padding: 20px 40px;
 	box-sizing:border-box;
 	box-shadow: 0 0 7px 0 hsla(0, 0%, 0%, 0.15);

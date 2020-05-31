@@ -73,8 +73,7 @@ hr {
     margin-bottom: 5px;
 }
 
-button {
-    
+button {   
     padding: 10px;
     background: #d86f92;
     border: none;
@@ -103,3 +102,19 @@ button {
 }
 
 /* guessing game */
+/* TODO: center horizontally*/
+#submitguess {
+    padding: 10px;
+    background: #d86f92;
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#guessField {
+    height: 35px;
+}
+

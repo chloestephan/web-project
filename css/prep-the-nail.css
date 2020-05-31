@@ -134,6 +134,37 @@ img {
     }
 }
 
+/* button back to top */
+/*Floating Back-To-Top Button*/
+#top-button {
+    position: fixed;
+    bottom: 20px;
+    float: right;
+    right: 9%;
+    left: 91%;
+
+    max-width: 50px;
+    height: 40px;
+    border-radius: 8em;
+    width: 100%;
+
+    border-color: #33383b;
+    background-color: rgb(100,100,100);
+    padding: 5px;
+    border-radius: 4px;
+
+    font-size: 12px;
+    color: white;
+
+}
+
+/*On Hover Color Change*/
+#top-button:hover {
+    background-color: #d86f92;
+}
+
+
+/* media queries */
 @media screen and (max-width:1200px) {
     .column {
         width: 100%;
@@ -149,3 +180,4 @@ img {
         margin-top: 30px;
     }
 }
+
