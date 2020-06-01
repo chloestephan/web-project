@@ -42,7 +42,7 @@ hr {
     height: 1px;
     border: 0;
     border-radius: 3em;
-    border-top: 3px solid #d86f92;
+    border-top: 3px solid #bc2fcc;
     margin: 1em 0;
     padding: 0;
     margin-top: 30px;
@@ -59,3 +59,19 @@ h2 {
     line-height: 1; 
     text-align: center; 
 }
+
+.row {
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  

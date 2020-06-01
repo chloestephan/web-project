@@ -43,7 +43,7 @@ h3 {
     text-align: center; 
 
     width: 100%;
-    border-bottom: 2px solid #d86f92; 
+    border-bottom: 2px solid #bc2fcc; 
 }
  
 h3 span { 
@@ -69,21 +69,19 @@ hr {
     height: 1px;
     border: 0;
     border-radius: 3em;
-    border-top: 3px solid #d86f92;
+    border-top: 3px solid #bc2fcc;
     margin: 1em 0;
     padding: 0;
     margin-top: 30px;
     margin-bottom: 5px;
 }
 
-#row-photo {
-    display: inline-block;
+.polygel-photo {
+    max-width: 100%;
 }
 
-.photo {
-    max-width: 50%;
-    max-height: 500px;
-    margin-left: 50px;
+.align-center {
+    text-align: center;
 }
 
 /* media queries */
@@ -92,4 +90,20 @@ hr {
         line-height: 1.5em;
         border-bottom-color: white;
     }
+
+    p {
+        margin: 5px;
+    }
 }
+
+@media screen and (max-width: 1200px) {
+    h3 {
+        line-height: 1.5em;
+        border-bottom-color: white;
+    }
+
+    p {
+        margin: 10px;
+    }
+}
+

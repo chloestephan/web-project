@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 { 
-    color: #d86f92; 
+    color: #bc2fcc; 
     font-family: 'Open Sans', sans-serif; 
     font-size: 30px; 
     font-weight: 300; 
@@ -66,7 +66,7 @@ hr {
     height: 1px;
     border: 0;
     border-radius: 3em;
-    border-top: 3px solid #d86f92;
+    border-top: 3px solid #bc2fcc;
     margin: 1em 0;
     padding: 0;
     margin-top: 30px;
@@ -75,7 +75,7 @@ hr {
 
 button {   
     padding: 10px;
-    background: #d86f92;
+    background: #bc2fcc;
     border: none;
     outline: none;
 
@@ -97,7 +97,7 @@ button {
     padding: 10px;
     cursor: move;
     z-index: 10;
-    background-color: #d86f92;
+    background-color: #bc2fcc;
     color: #fff;
 }
 
@@ -105,7 +105,7 @@ button {
 /* TODO: center horizontally*/
 #submitguess {
     padding: 10px;
-    background: #d86f92;
+    background: #bc2fcc;
     border: none;
     outline: none;
 
