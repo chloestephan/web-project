@@ -1,62 +1,25 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-}
-  
-html {
-box-sizing: border-box;
+    background-color: white;
 }
 
-img {
-    width: 1080px;
-    height: auto;
-}
-  
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-.column {
-    float: left;
-    width: 50%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-}
-
-.about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #33383b;
-    color: white;
-}
-
-.container {
-    padding: 0 16px;
-}
-
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.title {
-    color: grey;
-}
-
-@media screen and (max-width: 650px) {
-.column {
-    width: 100%;
+hr {
     display: block;
-    }
+    height: 1px;
+    border: 0;
+    border-radius: 3em;
+    border-top: 3px solid #bc2fcc;
+    margin: 1em 0;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-/* writing styles */
 h2 { 
     color: #111; 
     font-family: 'Helvetica Neue', sans-serif; 
@@ -69,46 +32,144 @@ h2 {
     margin-top: -10px;
 }
 
-h3 {
-    font-size: 25px;
+html {
+box-sizing: border-box;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-radius: 3em;
-    border-top: 3px solid palevioletred;
-    margin: 1em 0;
-    padding: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    color: black;
+
+    border-width:2px;
+    border-style:solid;
+    border-color:#bc2fcc;
 }
 
-p {
-    font-size: 20px;
+.about-section p {
+    color: black;
 }
 
 .align-center {
     text-align: center;
 }
 
-.fa-presentation {
-    padding: 20px;
-    font-size: 30px;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    border-color: #33383b;
-    margin-left: 15px;
-}
-  
-.fa-presentation:hover {
-    opacity: 0.7;
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
 }
 
-.fa-presentation-linkedin {
-    background: #d86f92;
-    color: white;
+
+
+@media screen and (max-width: 650px) {
+.column {
+    width: 100%;
+    display: block;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+.card{
+  position: relative;
+  display: inline-block;
+  max-width: 700px;
+  height: auto;
+  background: linear-gradient(-45deg,#f403d1,#64b5f6);
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: justify;
+  margin-bottom: 30px;
+  padding: 40px 20px;-webkit-box-shadow: 0 10px 15px rgba(0,0,0,.1) ;
+  box-shadow: 0 10px 15px rgba(0,0,0,.1) ;
+    -webkit-transition: .5s;
+    transition: .5s;  
+}
+
+.title .fa{
+  color:#fff;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius:  50%;
+  text-align: center;
+  line-height: 100px;
+  -webkit-box-shadow: 0 10px 10px rgba(0,0,0,.1) ;
+          box-shadow: 0 10px 10px rgba(0,0,0,.1) ;
+
+}
+
+.title h2 {
+  position: relative;
+  margin: 20px  0 0;
+  padding: 0;
+  color: #fff;
+  font-size: 28px;
+ z-index: 2;
+}
+
+.name, .description{
+  position: relative;
+  z-index: 2;
+}
+
+.name h4 {
+    margin: 0;
+    padding: 20px 0 ;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    }
+
+.description ul {
+  margin: 0;
+  padding: 0;
+}
+
+.description ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.card a {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  color : black;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px auto 0 ;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+}
+
+.card a:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+p {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
 }
