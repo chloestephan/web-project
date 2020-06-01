@@ -1,9 +1,10 @@
-/*---------------------- change background color ----------------------*/
+window.onload = showIdea1();
 
+/*---------------------- change background color ----------------------*/
 /* changes the background color of the main part of the "your turn" page*/
 var color =["#ff0000", "#ffa500", "#ffff00", "#90ee90", "#008000", "#40e0d0","#0000ff","#dda0dd","#ffb6c1" ,"#ffffff"];
 var i = 0;
-document.querySelector("button").addEventListener("click", function(){
+document.getElementById("switch").addEventListener("click", function(){
   i = 1 < color.length ? ++i : 0;
   document.querySelector("main").style.background = color[i]
 })
@@ -84,6 +85,48 @@ document.getElementById("submitguess").onclick = function(){
 document.getElementsByClassName("header-button").onclick = function(){
   document.getElementsByClassName('header-container').position='sticky';
 }
+
+/* display the right part */
+function showIdea1() {
+  document.getElementById("idea1").style.display = "block";
+  document.getElementById("idea2").style.display = "none";
+  document.getElementById("idea3").style.display = "none";
+  document.getElementById("idea4").style.display = "none";
+  document.getElementById("idea5").style.display = "none";
+}
+
+function showIdea2() {
+  document.getElementById("idea2").style.display = "block";
+  document.getElementById("idea1").style.display = "none";
+  document.getElementById("idea3").style.display = "none";
+  document.getElementById("idea4").style.display = "none";
+  document.getElementById("idea5").style.display = "none";
+}
+
+function showIdea3() {
+  document.getElementById("idea3").style.display = "block";
+  document.getElementById("idea1").style.display = "none";
+  document.getElementById("idea2").style.display = "none";
+  document.getElementById("idea4").style.display = "none";
+  document.getElementById("idea5").style.display = "none";
+}
+
+function showIdea4() {
+  document.getElementById("idea4").style.display = "block";
+  document.getElementById("idea1").style.display = "none";
+  document.getElementById("idea2").style.display = "none";
+  document.getElementById("idea3").style.display = "none";
+  document.getElementById("idea5").style.display = "none";
+}
+
+function showIdea5() {
+  document.getElementById("idea5").style.display = "block";
+  document.getElementById("idea1").style.display = "none";
+  document.getElementById("idea2").style.display = "none";
+  document.getElementById("idea3").style.display = "none";
+  document.getElementById("idea4").style.display = "none";
+}
+
 
 
 

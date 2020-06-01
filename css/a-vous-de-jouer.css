@@ -8,17 +8,22 @@
 body {
     margin: 0;
     padding: 0;
-    background: #ffb6c1;
+    background-color: white;
 }
 
 main {
     background: #ffffff;
+    height: 484px;
 }
 
 .banniere {   
     height: auto;
     width: 100%;
     max-width: 100%;
+}
+
+.align-center {
+    text-align: center;
 }
 
 /* write titles */

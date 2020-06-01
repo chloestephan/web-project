@@ -33,23 +33,33 @@
     </header>
 
     <body>
-        <main id = "main">
+        <main id="main">
             <h2>Your turn !</h2>
             <hr>
 
-            <div>
+            <!-- navigation buttons -->
+            <nav class="navigation align-center">
+                <div id="task">
+                    <div class="nav-row">
+                    <button name="button" class="nav-button" type="button" formnovalidate onclick="return showIdea1();">Idea 1</button>
+                    <button name="button" class="nav-button" type="button" formnovalidate onclick="return showIdea2();">Idea 2</button>
+                    <button name="button" class="nav-button" type="button" formnovalidate onclick="return showIdea3();">Idea 3</button>
+                    <button name="button" class="nav-button" type="button" formnovalidate onclick="return showIdea4();">Idea 4</button>
+                </div>
+            </nav>
+
+            <div id="idea1" class="align-center">
                 <h3><span>Idea 1</span></h3>
                 <!--inspo : https://www.dulux.co.uk/en/colour-details/h_lime-->
                 <button id="switch">switch colors</button>
             </div>
 
-            <div>
+            <div id="idea2" class="align-center">
                 <h3><span>Idea 2</span></h3>
-                <p>Make the header sticky</p>
-                <button id="header-button">make sticky</button>
+                <p>color palette</p>
             </div>
 
-            <div style="height: 70px;">
+            <div id="idea3" class="align-center">
                 <h3><span>Idea 3</span></h3>
                 <!-- Draggable DIV -->
                 <div id="moving-div">
@@ -59,7 +69,7 @@
             </div>
             <div>
 
-            <div>
+            <div id="idea4" class="align-center">
                 <h3><span>Guessing game</span></h3>
                 <p>We have selected a random number between 1 - 10. <br>See if you can guess it.</p> 
                 <div class="form"> 
@@ -69,9 +79,9 @@
                 </div> 
             </div>
 
-            <div>
-                <h3><span>Idea 4</span></h3>
-
+            <div id="idea5" class="align-center">
+                <h3><span>Idea 5</span></h3>
+                <p>A TROUVER MAZETTE</p>
             </div>
         </main>
     </body>
