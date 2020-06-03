@@ -13,7 +13,7 @@ body {
 
 main {
     background: #ffffff;
-    height: 484px;
+    min-height: 491px;
 }
 
 .banniere {   
@@ -87,9 +87,11 @@ button {
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
+
+    margin-bottom: 15px;
 }
 
-/*  */
+/* --------------- MOVING DIVISION ---------------  */
 #moving-div {
     position: absolute;
     z-index: 9;
@@ -106,7 +108,7 @@ button {
     color: #fff;
 }
 
-/* guessing game */
+/* --------------- GUESSING GAME --------------- */
 /* TODO: center horizontally*/
 #submitguess {
     padding: 10px;
@@ -123,3 +125,138 @@ button {
     height: 35px;
 }
 
+
+/* --------------- NAIL TO DO LIST --------------- */
+/* color palette */
+.row {
+    display: inline-block;
+}
+
+.color-display-red {
+    width: 100px;
+    height: 150px;
+    background: red;
+}
+
+.color-display-red:hover {
+    transform: scale(1.1);
+}
+
+.color-display-orange {
+    width: 100px;
+    height: 150px;
+    background: rgb(255, 123, 0);
+}
+
+.color-display-orange:hover {
+    transform: scale(1.1);
+}
+
+.color-display-transition-orange {
+    width: 100px;
+    height: 150px;
+    background: orange;
+}
+
+.color-display-transition-orange:hover {
+    transform: scale(1.1);
+}
+
+.color-display-yellow {
+    width: 100px;
+    height: 150px;
+    background: yellow;
+}
+
+.color-display-yellow:hover {
+    transform: scale(1.1);
+}
+
+.color-display-green {
+    width: 100px;
+    height: 150px;
+    background: rgb(39, 211, 16);
+}
+
+.color-display-green:hover {
+    transform: scale(1.1);
+}
+
+.color-display-darkgreen {
+    width: 100px;
+    height: 150px;
+    background: green;
+}
+
+.color-display-darkgreen:hover {
+    transform: scale(1.1);
+}
+
+.color-display-lightblue {
+    width: 100px;
+    height: 150px;
+    background: rgb(23, 178, 230);
+}
+
+.color-display-lightblue:hover {
+    transform: scale(1.1);
+}
+
+.color-display-darkblue {
+    width: 100px;
+    height: 150px;
+    background: blue;
+}
+
+.color-display-darkblue:hover {
+    transform: scale(1.1);
+}
+
+.color-display-purple {
+    width: 100px;
+    height: 150px;
+    background: purple;
+}
+
+.color-display-purple:hover {
+    transform: scale(1.1);
+}
+
+.color-display-pink {
+    width: 100px;
+    height: 150px;
+    background: palevioletred;
+}
+
+.color-display-pink:hover {
+    transform: scale(1.1);
+}
+
+/* nail form */
+
+
+
+
+
+/* nail length */
+
+
+/* table to store the data */
+table {
+    margin: 0 auto;
+  border: 2px solid red;
+  width: 95%;
+  text-align: center;
+}
+
+th {
+    background-color: lightyellow;
+  font-family: 'Lato', sans-serif;
+  color: green; 
+  font-size: 20px; 
+  font-weight: 100;
+}
+
+td {
+  height: 50px;
+}

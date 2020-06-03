@@ -128,6 +128,28 @@ function showIdea5() {
 }
 
 
+/* idea 4 */
+function ajouter() {
+  var color = document.getElementById("choice-color").value;
+  var shape = document.getElementById("choice-shape").value;
+  var length = document.getElementById("choice-length").value;
+
+  if (color == 0 || shape == 0 || length == 0) 
+  {
+      alert("Please enter correct information.");
+  }
+  else 
+  {   
+      var table = document.getElementById('table');
+      table.insertAdjacentHTML("beforeend", "<tr><td>"+color+"</td><td>"+shape+"</td><td>"+length+"</td></tr>");
+  }
+}
+
+function supprimer() {
+  var table = document.getElementById('table');
+  table.innerHTML = "";
+}
+
 
 
 

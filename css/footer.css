@@ -5,7 +5,6 @@ main {
   background: white;
   /* put on top */
   position: relative;
-  z-index: 1;
   font: 16px/1.4 system-ui, sans-serif;
   padding: 2rem;
 }
@@ -23,9 +22,16 @@ body {
   text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
+
+  Position:static;
+  z-index: 1000;
 }
 
 /* ----------------------------- footer : left part ----------------------------- */
+.footer-left {
+  z-index: 10;
+  max-width: 550px;
+}
 /* police d'ecriture */
 .footer-distributed .footer-left p {
   color: white;
@@ -36,12 +42,17 @@ body {
   margin-left: 0px;
 }
 
+.footer-distributed .footer-links {
+  max-width: 50%;
+}
+
 /* manage the display of the left part of the footer (the links) */
 .footer-distributed p.footer-links {
   font-size: 22px;
   font-weight: bold;
   color: white;
   margin: 0 0 10px;
+  max-width: 50%;
 }
 
 /* manage the display of each element */
@@ -77,6 +88,7 @@ body {
   float: right;
   margin-top: 6px;
   max-width: 200px;
+  z-index: 50;
 }
 
 /* manage the display of each element */
@@ -84,12 +96,13 @@ body {
   display: inline-block;
   width: 40px;
   height: 40px;
+  
 
   background-color: white;
   border-radius: 2px;
 
   font-size: 24px;
-  color: linear-gradient(-45deg,#f403d1,#64b5f6);
+  color: black;
   text-align: center;
 
   line-height: 35px;
@@ -98,7 +111,7 @@ body {
   transition:all .25s;
 }
 
-/* when hovered over : it gets a bit bigger by 1.1 ratio */
+/* when hovered over: it gets a bit bigger by 1.1 ratio */
 .footer-distributed .footer-right a:hover{
   transform:scale(1.1); 
   -webkit-transform:scale(1.1);
@@ -113,13 +126,12 @@ iframe {
 iframe[seamless] {
   border: none;
   width: 100%;
-  height: 157px;
+
   margin-bottom: -4px;  /* make the footer fully stick at the bottom and thus get rid of the small space */
 }
 
 
 /* diagonal decoration */
-
 .footer-distributed::before{
   content: '';
   position: absolute;
@@ -149,6 +161,7 @@ iframe[seamless] {
 
   iframe {
     max-width: 100%;
+    height: 270px;
   }
 }
 
@@ -163,6 +176,3 @@ iframe[seamless] {
     max-width: 100%;
   }
 }
-
-
-

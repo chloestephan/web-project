@@ -20,6 +20,24 @@ hr {
     margin-bottom: 15px;
 }
 
+h6 {
+    font-size: 50px;
+    margin-top: -10px;
+
+    font-weight: 300; 
+    line-height: 0.1em;
+    margin: 30px 0 30px;
+    text-align: center; 
+
+    width: 100%;
+    border-bottom: 2px solid #33383b; 
+}
+
+h6 span {
+    background:#fff; 
+    padding:0 10px; 
+}
+
 h2 { 
     color: #111; 
     font-family: 'Helvetica Neue', sans-serif; 
@@ -49,6 +67,7 @@ box-sizing: border-box;
 
 .about-section p {
     color: black;
+    font-size: 20px;
 }
 
 .align-center {
@@ -62,6 +81,31 @@ box-sizing: border-box;
     padding: 0 8px;
 }
 
+/* button back to top */
+#top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #bc2fcc;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+  
+#top-button:hover {
+    color: #bc2fcc;
+    background-color: white;
+
+    border-width:2px;
+    border-style:solid;
+    border-color:#bc2fcc;
+}
 
 
 @media screen and (max-width: 650px) {

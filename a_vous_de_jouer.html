@@ -50,26 +50,11 @@
 
             <div id="idea1" class="align-center">
                 <h3><span>Idea 1</span></h3>
-                <!--inspo : https://www.dulux.co.uk/en/colour-details/h_lime-->
                 <button id="switch">switch colors</button>
             </div>
 
             <div id="idea2" class="align-center">
                 <h3><span>Idea 2</span></h3>
-                <p>color palette</p>
-            </div>
-
-            <div id="idea3" class="align-center">
-                <h3><span>Idea 3</span></h3>
-                <!-- Draggable DIV -->
-                <div id="moving-div">
-                    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-                    <div id="moving-display">Hello, move me :D </div>     
-                </div>
-            </div>
-            <div>
-
-            <div id="idea4" class="align-center">
                 <h3><span>Guessing game</span></h3>
                 <p>We have selected a random number between 1 - 10. <br>See if you can guess it.</p> 
                 <div class="form"> 
@@ -77,6 +62,95 @@
                     <input type = "text" id = "guessField" class = "guessField"> 
                     <input type = "submit" value = "Submit guess" class = "guessSubmit" id = "submitguess"> 
                 </div> 
+                
+            </div>
+
+            <div id="idea3" class="align-center">
+                <h3><span>Idea 3</span></h3>
+                <div id="moving-div">
+                    <div id="moving-display">Hello, move me :D </div>     
+                </div>
+            </div>
+            <div>
+
+            <div id="idea4" class="align-center">
+                <p>Choose for your next nail appointment!</p>
+                <!--inspo : https://www.dulux.co.uk/en/colour-details/h_lime-->
+
+                <div class="row">
+                    <h4>Choose color</h4>
+                    <select id="choice-color">
+                        <option value="0" required>Color</option> 
+						<option value="1" required>Red</option>  
+						<option value="2" required>Orange</option>
+                        <option value="3" required>Yellow</option>
+                        <option value="4" required>Green</option>
+                        <option value="5" required>Blue</option>
+                        <option value="6" required>Purple</option>
+                        <option value="7" required>Pink</option>
+                        <option value="8" required>Black</option>
+					</select>
+                    <!--<button class="color-display-red" id="choice-color-red"></button>
+                    <button class="color-display-orange" id="choice-color-orange"></button>
+                    <button class="color-display-transition-orange" id="choice-color-transition-orange"></button>
+                    <button class="color-display-yellow" id="choice-color-yellow"></button>
+                    <button class="color-display-green" id="choice-color-green"></button>
+                    <button class="color-display-darkgreen" id="choice-color-darkgreen"></button>
+                    <button class="color-display-lightblue" id="choice-color-lightblue"></button>
+                    <button class="color-display-darkblue" id="choice-color-darkblue"></button>
+                    <button class="color-display-purple" id="choice-color-purple"></button>
+                    <button class="color-display-pink" id="choice-color-pink"></button>
+                    -->
+                </div>
+
+                <div class="row">
+                    <h4>Choose shape</h4>
+                    <select id="choice-shape">
+						<option value="0" required>Shape</option>  
+						<option value="1" required>Square</option>
+                        <option value="2" required>Squoval</option>
+                        <option value="3" required>Round</option>
+                        <option value="4" required>oval</option>
+                        <option value="5" required>Almond</option>
+                        <option value="6" required>Coffin</option>
+                        <option value="7" required>Stiletto</option>
+					</select>
+                </div>
+
+                <div class="row">
+                    <h4>Choose length</h4>
+                    <select id="choice-length">
+						<option value="0" required>Length</option>  
+						<option value="1" required>Short</option>
+                        <option value="2" required>Medium</option>
+                        <option value="3" required>Long</option>
+                        <option value="4" required>Very long</option>
+                    </select>
+                    <!--
+                    <button class="choice-length">Short</button>
+                    <button class="length-display">Medium</button>
+                    <button class="length-display">Long</button>
+                    <button class="length-display">Very long</button>
+                    -->
+                </div>
+
+                <div>	
+					<button class="button" onClick="ajouter()">Ajouter</button>
+					<button class="button" onClick="supprimer()">Tout supprimer</button>
+				</div>
+
+                <div>
+                    <table id = "table_name">
+                        <thead id = "table_head">
+                            <th>Color</th>
+                            <th>Shape</th>
+                            <th>Length</th>
+                        </thead>
+                        <tbody id="table">
+                        </tbody>	
+                    </table>
+                </div>
+                
             </div>
 
             <div id="idea5" class="align-center">
@@ -90,5 +164,6 @@
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8" src="js/script.js"></script>
+    <script type="text/javascript" src="js/top-button.js"></script>
 
 </html>
