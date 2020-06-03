@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* --- allows the page to go back to the top when clicks on the top button --- */
 
 // gets which button to apply the following functions
@@ -34,13 +33,3 @@ $(window).scroll(function() {
 //laisser en fixed mais plus haut (scroll de 1 px -> remonte de 1px)
 
 
-=======
-$(window).scroll(function (event) {
-    var windowTop = $(this).scrollTop();        
-    if (windowTop >= $("#iframe").offset().top) {
-        $("#top-button").addClass("fixed");
-    } else {
-        $("#top-button").removeClass("fixed");
-    }
-});
->>>>>>> master

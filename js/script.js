@@ -51,7 +51,6 @@ function closeDragElement() {
     // stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
-<<<<<<< HEAD
   }
 }
 
@@ -80,11 +79,6 @@ document.getElementById("submitguess").onclick = function(){
     guess++; 
     alert("Oops! Try a bigger number") 
   } 
-}
-
-/*---------------------- Make header sticky ----------------------*/
-document.getElementsByClassName("header-button").onclick = function(){
-  document.getElementsByClassName('header-container').position='sticky';
 }
 
 /* display the right part */
@@ -138,8 +132,6 @@ function ajouter() {
   if (color == 0 || shape == 0 || length == 0) 
   {
       alert("Please enter correct information.");
-=======
->>>>>>> master
   }
   else 
   {   
@@ -152,86 +144,3 @@ function supprimer() {
   var table = document.getElementById('table');
   table.innerHTML = "";
 }
-
-<<<<<<< HEAD
-=======
-/*---------------------- guessing game ----------------------*/
-// random value generated 
-var y = Math.floor(Math.random() * 10 + 1); 
-      
-// counting the number of guesses 
-var guess = 1; 
-  
-document.getElementById("submitguess").onclick = function(){     
-  // number guessed by user      
-  var x = document.getElementById("guessField").value; 
-
-  if(x == y) 
-  {     
-    alert("Congratulations! You guessed it right in" + guess + " guesses."); 
-  } 
-  else if(x > y) /* if guessed number is greater than actual number*/ 
-  {     
-    guess++; 
-    alert("Here's a tip: try a smaller number."); 
-  } 
-  else
-  { 
-    guess++; 
-    alert("Oops! Try a bigger number") 
-  } 
-}
-
-/*---------------------- Make header sticky ----------------------*/
-document.getElementsByClassName("header-button").onclick = function(){
-  document.getElementsByClassName('header-container').position='sticky';
-}
-
-/* display the right part */
-function showIdea1() {
-  document.getElementById("idea1").style.display = "block";
-  document.getElementById("idea2").style.display = "none";
-  document.getElementById("idea3").style.display = "none";
-  document.getElementById("idea4").style.display = "none";
-  document.getElementById("idea5").style.display = "none";
-}
-
-function showIdea2() {
-  document.getElementById("idea2").style.display = "block";
-  document.getElementById("idea1").style.display = "none";
-  document.getElementById("idea3").style.display = "none";
-  document.getElementById("idea4").style.display = "none";
-  document.getElementById("idea5").style.display = "none";
-}
-
-function showIdea3() {
-  document.getElementById("idea3").style.display = "block";
-  document.getElementById("idea1").style.display = "none";
-  document.getElementById("idea2").style.display = "none";
-  document.getElementById("idea4").style.display = "none";
-  document.getElementById("idea5").style.display = "none";
-}
-
-function showIdea4() {
-  document.getElementById("idea4").style.display = "block";
-  document.getElementById("idea1").style.display = "none";
-  document.getElementById("idea2").style.display = "none";
-  document.getElementById("idea3").style.display = "none";
-  document.getElementById("idea5").style.display = "none";
-}
-
-function showIdea5() {
-  document.getElementById("idea5").style.display = "block";
-  document.getElementById("idea1").style.display = "none";
-  document.getElementById("idea2").style.display = "none";
-  document.getElementById("idea3").style.display = "none";
-  document.getElementById("idea4").style.display = "none";
-}
-
-
->>>>>>> master
-
-
-
-
-

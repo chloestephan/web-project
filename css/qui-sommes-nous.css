@@ -18,7 +18,6 @@ hr {
     padding: 0;
     margin-top: 15px;
     margin-bottom: 15px;
-<<<<<<< HEAD
 }
 
 h6 {
@@ -51,22 +50,6 @@ h2 {
     margin-top: -10px;
 }
 
-=======
-}
-
-h2 { 
-    color: #111; 
-    font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 100px; 
-    font-weight: bold; 
-    letter-spacing: -1px; 
-    line-height: 1; 
-    text-align: center; 
-    margin-bottom: -10px;
-    margin-top: -10px;
-}
-
->>>>>>> master
 html {
 box-sizing: border-box;
 }
@@ -80,7 +63,6 @@ box-sizing: border-box;
     border-width:2px;
     border-style:solid;
     border-color:#bc2fcc;
-<<<<<<< HEAD
 }
 
 .about-section p {
@@ -114,40 +96,18 @@ box-sizing: border-box;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-=======
-}
-
-.about-section p {
-    color: black;
-}
-
-.align-center {
-    text-align: center;
->>>>>>> master
 }
   
 #top-button:hover {
     color: #bc2fcc;
     background-color: white;
 
-<<<<<<< HEAD
     border-width:2px;
     border-style:solid;
     border-color:#bc2fcc;
 }
 
 
-=======
-.column {
-    float: left;
-    width: 50%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-
-
-
->>>>>>> master
 @media screen and (max-width: 650px) {
 .column {
     width: 100%;
@@ -208,8 +168,6 @@ box-sizing: border-box;
     padding: 20px 0 ;
     color: #fff;
     font-size: 60px;
-<<<<<<< HEAD
-=======
     text-align: center;
     }
 
@@ -224,27 +182,9 @@ box-sizing: border-box;
     list-style: none;
     color: #fff;
     font-size: 16px;
->>>>>>> master
-    text-align: center;
-    }
-
-.description ul {
-  margin: 0;
-  padding: 0;
-}
-
-<<<<<<< HEAD
-.description ul li {
-    margin: 0 0 10px;
-    padding: 0;
-    list-style: none;
-    color: #fff;
-    font-size: 16px;
     text-align: center;
 }
 
-=======
->>>>>>> master
 .card a {
   position: relative;
   z-index: 2;
