@@ -28,9 +28,9 @@ body {
 }
 
 /* ----------------------------- footer : left part ----------------------------- */
-.footer-left {
-  z-index: 10;
+.footer-distributed .footer-left {
   max-width: 550px;
+  margin: 0px;
 }
 /* police d'ecriture */
 .footer-distributed .footer-left p {

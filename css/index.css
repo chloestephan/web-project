@@ -181,40 +181,30 @@ h2 span {
 
 /* social media buttons in main */
 .fa-index {
-    padding: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
     font-size: 30px;
-    width: 15px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
-    border-color: #33383b;
     margin-left: 15px;
+
+    background: #bc2fcc;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
 }
   
 .fa-index:hover {
-    opacity: 0.7;
+    background: white;
+    color: #bc2fcc;
 }
   
 .fa-index-facebook {
-    background: #bc2fcc;
-    color: white;
-}
-  
-.fa-index-twitter {
-    background: #bc2fcc;
-    color: white;
-}
- 
-
-.fa-index-linkedin {
-    background: #bc2fcc;
-    color: white;
-}
-
-
-.fa-index-instagram {
-    background: #bc2fcc;
-    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* -------------------- article divisions --------------------- */
