@@ -5,10 +5,13 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 main {
     max-height: 100%;
 }
 
+=======
+>>>>>>> master
 /* write titles */
 h2 { 
     color: #111; 
@@ -64,6 +67,7 @@ hr {
     margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
 /* button back to top */
 #top-button {
     display: none;
@@ -95,6 +99,8 @@ hr {
     width: 100%;
     max-width: 100%;
 }
+=======
+>>>>>>> master
 
 @media screen and (max-width:600px) {
     img {
@@ -121,6 +127,7 @@ hr {
         font-size: 80px;
     }
 
+<<<<<<< HEAD
     .youtube {
         max-width: 100%;
         width: 400px;
@@ -133,6 +140,19 @@ hr {
     .youtube {
         max-width: 100%;
     }
+=======
+    iframe {
+        max-width: 100%;
+        width: 400px;
+        height: 200px;
+    }
+}
+
+.banniere {   
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+>>>>>>> master
 }
 
 @media all and (max-width: 1200px) {
@@ -141,9 +161,16 @@ hr {
         margin-right: 20px;
     }
 
+<<<<<<< HEAD
     .youtube {
         max-width: 100%;
         width: 600px;
         min-height: 240px;
+=======
+    iframe {
+        max-width: 100%;
+        width: 600px;
+        height: 350px;
+>>>>>>> master
     }
 }

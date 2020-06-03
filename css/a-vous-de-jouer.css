@@ -13,7 +13,11 @@ body {
 
 main {
     background: #ffffff;
+<<<<<<< HEAD
     min-height: 491px;
+=======
+    height: 484px;
+>>>>>>> master
 }
 
 .banniere {   
@@ -87,11 +91,17 @@ button {
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
+<<<<<<< HEAD
 
     margin-bottom: 15px;
 }
 
 /* --------------- MOVING DIVISION ---------------  */
+=======
+}
+
+/*  */
+>>>>>>> master
 #moving-div {
     position: absolute;
     z-index: 9;
@@ -108,7 +118,11 @@ button {
     color: #fff;
 }
 
+<<<<<<< HEAD
 /* --------------- GUESSING GAME --------------- */
+=======
+/* guessing game */
+>>>>>>> master
 /* TODO: center horizontally*/
 #submitguess {
     padding: 10px;
@@ -125,6 +139,7 @@ button {
     height: 35px;
 }
 
+<<<<<<< HEAD
 
 /* --------------- NAIL TO DO LIST --------------- */
 /* color palette */
@@ -260,3 +275,5 @@ th {
 td {
   height: 50px;
 }
+=======
+>>>>>>> master

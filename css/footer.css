@@ -42,10 +42,13 @@ body {
   margin-left: 0px;
 }
 
+<<<<<<< HEAD
 .footer-distributed .footer-links {
   max-width: 50%;
 }
 
+=======
+>>>>>>> master
 /* manage the display of the left part of the footer (the links) */
 .footer-distributed p.footer-links {
   font-size: 22px;
@@ -88,7 +91,10 @@ body {
   float: right;
   margin-top: 6px;
   max-width: 200px;
+<<<<<<< HEAD
   z-index: 50;
+=======
+>>>>>>> master
 }
 
 /* manage the display of each element */
@@ -96,13 +102,20 @@ body {
   display: inline-block;
   width: 40px;
   height: 40px;
+<<<<<<< HEAD
   
+=======
+>>>>>>> master
 
   background-color: white;
   border-radius: 2px;
 
   font-size: 24px;
+<<<<<<< HEAD
   color: black;
+=======
+  color: linear-gradient(-45deg,#f403d1,#64b5f6);
+>>>>>>> master
   text-align: center;
 
   line-height: 35px;
@@ -126,12 +139,20 @@ iframe {
 iframe[seamless] {
   border: none;
   width: 100%;
+<<<<<<< HEAD
 
+=======
+  height: 157px;
+>>>>>>> master
   margin-bottom: -4px;  /* make the footer fully stick at the bottom and thus get rid of the small space */
 }
 
 
 /* diagonal decoration */
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 .footer-distributed::before{
   content: '';
   position: absolute;
@@ -161,7 +182,10 @@ iframe[seamless] {
 
   iframe {
     max-width: 100%;
+<<<<<<< HEAD
     height: 270px;
+=======
+>>>>>>> master
   }
 }
 
@@ -176,3 +200,9 @@ iframe[seamless] {
     max-width: 100%;
   }
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> master

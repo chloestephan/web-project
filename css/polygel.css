@@ -84,6 +84,7 @@ hr {
     text-align: center;
 }
 
+<<<<<<< HEAD
 /* button back to top */
 #top-button {
     display: none;
@@ -111,6 +112,8 @@ hr {
 }
 
 
+=======
+>>>>>>> master
 /* media queries */
 @media screen and (max-width: 600px) {
     h3 {
