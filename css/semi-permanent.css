@@ -115,7 +115,8 @@ table {
 
 th {
     height: 50px;
-    text-align: center;
+    text-align: left;
+    padding: 15px;
 }
 
 .th-left {
