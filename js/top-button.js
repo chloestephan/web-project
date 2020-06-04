@@ -21,6 +21,8 @@ function topFunction() {
 }
 
 /* --- make the button stop just before footer ---*/
+
+/* essai 1 */
 $(window).scroll(function() {
   var windowTop = $(this).scrollTop();        
   if (windowTop >= $("#footer").offset().top) {
@@ -29,7 +31,3 @@ $(window).scroll(function() {
     document.getElementById("top-button").style.position = "absolute";
   }
 });
-
-//laisser en fixed mais plus haut (scroll de 1 px -> remonte de 1px)
-
-

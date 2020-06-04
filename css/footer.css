@@ -1,7 +1,6 @@
 /* ----------------------------- footer ----------------------------- */
 main {
   min-height: 100hv;
-  /* need a solid bg to hide the footer */
   background: white;
   /* put on top */
   position: relative;
@@ -13,165 +12,99 @@ body {
   margin: 0;
 }
 
-/* ----------------------------- overall footer ----------------------------- */
-.footer-distributed {
-  background: linear-gradient(-45deg,#f403d1,#64b5f6);
-  box-sizing: border-box;
-  width: 100%;
-
-  text-align: left;
-  font: normal 16px sans-serif;
-  padding: 45px 50px;
-
-  Position:static;
-  z-index: 1000;
-}
-
-/* ----------------------------- footer : left part ----------------------------- */
-.footer-distributed .footer-left {
-  max-width: 550px;
-  margin: 0px;
-}
-/* police d'ecriture */
-.footer-distributed .footer-left p {
-  color: white;
-  font-size: 16px;
-}
-
-.p-footer {
-  margin-left: 0px;
-}
-
-.footer-distributed .footer-links {
-  max-width: 50%;
-}
-
-/* manage the display of the left part of the footer (the links) */
-.footer-distributed p.footer-links {
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
-  margin: 0 0 10px;
-  max-width: 50%;
-}
-
-/* manage the display of each element */
-.footer-distributed p.footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: white;
-}
-
-/* add a dot between each link */
-.footer-distributed .footer-links a:before {
-  content: "·";
-  font-size: 20px;
-  color: white;
-  display: inline-block;
-  padding-right: 7px;
-}
-
-/* remove the dot before the first link (index) */
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* when hovered over : the link gets underlined */
-.footer-distributed p.footer-links a:hover{
-  text-decoration:underline;
-}
-
-/* ----------------------------- footer : right part ----------------------------- */
-/* manage the display of the right part of the footer (social medias) */
-.footer-distributed .footer-right {
-  float: right;
-  margin-top: 6px;
-  max-width: 200px;
-  z-index: 50;
-}
-
-/* manage the display of each element */
-.footer-distributed .footer-right a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  
-
-  background-color: white;
-  border-radius: 2px;
-
-  font-size: 24px;
-  color: black;
-  text-align: center;
-
-  line-height: 35px;
-  margin-left: 3px;
-
-  transition:all .25s;
-}
-
-/* when hovered over: it gets a bit bigger by 1.1 ratio */
-.footer-distributed .footer-right a:hover{
-  transform:scale(1.1); 
-  -webkit-transform:scale(1.1);
-}
-
-
-/* frame that includes the footer into all the other files when called */
+/* ------ frame that gets the footer in the other pages ------ */
 iframe {
-  max-width: 100%;
+	max-width: 100%;
+	/*height: 180px;*/
 }
-
+  
 iframe[seamless] {
-  border: none;
-  width: 100%;
-  margin-bottom: -4px;  /* make the footer fully stick at the bottom and thus get rid of the small space */
+	border: none;
+	width: 100%;
+	margin-bottom: -4px;  /* make the footer fully stick at the bottom and thus get rid of the small space */
 }
 
+/* ------ whole footer ------ */
+.footer-distributed{
+	background: linear-gradient(-45deg,#f403d1,#64b5f6);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+}
 
-/* diagonal decoration */
-.footer-distributed::before{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  background: rgba(255, 255, 255, .1);
+/* ------ left part of the footer ------ */
+.footer-distributed .footer-left p{
+	color:  white;
+	font-size: 16px;
+	margin: 0;
+}
+
+/* links (Home, About, Your Turn!) - disposition + writing style */
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+  padding: 0;
+  
+  z-index: 2;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+  color:  inherit;
   z-index: 1;
-  -webkit-transform: skewY(-5deg) scale(1.5);
-        transform: skewY(-5deg) scale(1.5);
 }
 
-/* ----------------------------- Media Queries ----------------------------- */
-/* adapt the display to the size of the window */
+.footer-distributed p.footer-links a:hover{
+	text-decoration: underline;
+}
+
+/* ------ right part of the footer ------ */
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+  max-width: 180px;
+  z-index: 1;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  white;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+}
+
+/* ------ media queries ------ */
 @media (max-width: 600px) {
-.footer-distributed .footer-left, .footer-distributed .footer-right {
-    text-align: center;
-  }
-  .footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
 
-  iframe {
-    max-width: 100%;
-    height: 270px;
-  }
-}
+	.footer-distributed .footer-left, .footer-distributed .footer-right{
+		text-align: center;
+	}
 
-@media (max-width: 800px) {
-  iframe {
-    max-width: 100%;
-  }
-}
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
 
-@media (max-width: 1200px) {
-  iframe {
-    max-width: 100%;
-  }
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
 }

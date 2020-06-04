@@ -35,7 +35,7 @@ body {
 }
 
 .header .header-container h1 span {
-	color: #f403d1;
+	text-decoration: underline;
 }
 
 /* The header links */

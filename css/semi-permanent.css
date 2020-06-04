@@ -55,6 +55,7 @@ h4 {
     text-decoration: underline;
     text-decoration-color: #bc2fcc;
 }
+
 /* write in the texts */
 p { 
     color: #111;
@@ -115,8 +116,14 @@ table {
 
 th {
     height: 50px;
-    text-align: left;
+    text-align: center;
     padding: 15px;
+    border-bottom: 2px solid #bc2fcc; 
+}
+
+th span {
+    padding:0 15px; 
+    border-radius: 2em;
 }
 
 .th-left {
@@ -138,20 +145,17 @@ td {
 /* button back to top */
 #top-button {
     display: none;
+    display: right;
+    border: none;
+    outline: none;
     background-color: #bc2fcc;
     color: white;
     cursor: pointer;
-
-    border: none;
-    outline: none;
-    bottom: 20px;    
-    padding: 15px;
+    padding: 10px;
     border-radius: 4px;
-    right: 30px;
-    z-index: 1;
-    font-size: 18px;
 
-    position: fixed;
+    position: sticky;
+    bottom: 20px;
 }
   
 #top-button:hover {
