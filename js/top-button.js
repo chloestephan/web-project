@@ -19,15 +19,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-/* --- make the button stop just before footer ---*/
-
-/* essai 1 */
-$(window).scroll(function() {
-  var windowTop = $(this).scrollTop();        
-  if (windowTop >= $("#footer").offset().top) {
-    document.getElementById('top-button').style.position = "fixed";
-  } else {
-    document.getElementById("top-button").style.position = "absolute";
-  }
-});

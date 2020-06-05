@@ -103,6 +103,8 @@ hr {
 
     position: sticky;
     bottom: 10px;
+
+    margin-left: 97%;
 }
   
 #top-button:hover {
@@ -112,6 +114,10 @@ hr {
     border-width:2px;
     border-style:solid;
     border-color:#bc2fcc;
+}
+
+.youtube {
+    margin-bottom: 18px;
 }
 
 /* media queries */

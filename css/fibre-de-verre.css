@@ -82,6 +82,8 @@ hr {
 
     position: sticky;
     bottom: 10px;
+
+    margin-left: 97%;
 }
   
 #top-button:hover {
@@ -97,6 +99,7 @@ hr {
     height: auto;
     width: 100%;
     max-width: 100%;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width:600px) {
@@ -134,6 +137,17 @@ hr {
 @media all and (max-width: 800px) {
     .youtube {
         max-width: 100%;
+    }
+
+    h3 {
+        line-height: 1.5em;
+        border-bottom: 0px;
+    }
+}
+@media all and (min-width:800px) and (max-width: 1200px) {
+    h3 {
+        line-height: 1.5em;
+        border-bottom: 0px;
     }
 }
 

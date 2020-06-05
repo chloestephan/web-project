@@ -1,4 +1,28 @@
 window.onload = showIdea1();
+/* display the right part */
+function showIdea1() {
+  document.getElementById("idea1").style.display = "block";
+  document.getElementById("idea2").style.display = "none";
+  document.getElementById("idea3").style.display = "none";
+  document.getElementById("idea4").style.display = "none";
+  document.getElementById("idea5").style.display = "none";
+}
+
+function showIdea2() {
+  document.getElementById("idea2").style.display = "block";
+  document.getElementById("idea1").style.display = "none";
+  document.getElementById("idea3").style.display = "none";
+  document.getElementById("idea4").style.display = "none";
+  document.getElementById("idea5").style.display = "none";
+}
+
+function showIdea3() {
+  document.getElementById("idea3").style.display = "block";
+  document.getElementById("idea1").style.display = "none";
+  document.getElementById("idea2").style.display = "none";
+  document.getElementById("idea4").style.display = "none";
+  document.getElementById("idea5").style.display = "none";
+}
 
 /*---------------------- change background color ----------------------*/
 /* changes the background color of the main part of the "your turn" page*/
@@ -11,19 +35,19 @@ document.getElementById("switch").addEventListener("click", function(){
 
 /*---------------------- make element dragable ----------------------*/
 // Make the DIV element draggable:
-dragElement(document.getElementById("moving-div"));
+dragElement(document.getElementById("mydiv"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
-    // if present, the header of the element is where you move the DIV from:
+    // if present, the header is where you move the DIV from:
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
   }
 
-function dragMouseDown(e) {
+  function dragMouseDown(e) {
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:
@@ -34,7 +58,7 @@ function dragMouseDown(e) {
     document.onmousemove = elementDrag;
   }
 
-function elementDrag(e) {
+  function elementDrag(e) {
     e = e || window.event;
     e.preventDefault();
     // calculate the new cursor position:
@@ -47,7 +71,7 @@ function elementDrag(e) {
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
   }
 
-function closeDragElement() {
+  function closeDragElement() {
     // stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
@@ -81,66 +105,3 @@ document.getElementById("submitguess").onclick = function(){
   } 
 }
 
-/* display the right part */
-function showIdea1() {
-  document.getElementById("idea1").style.display = "block";
-  document.getElementById("idea2").style.display = "none";
-  document.getElementById("idea3").style.display = "none";
-  document.getElementById("idea4").style.display = "none";
-  document.getElementById("idea5").style.display = "none";
-}
-
-function showIdea2() {
-  document.getElementById("idea2").style.display = "block";
-  document.getElementById("idea1").style.display = "none";
-  document.getElementById("idea3").style.display = "none";
-  document.getElementById("idea4").style.display = "none";
-  document.getElementById("idea5").style.display = "none";
-}
-
-function showIdea3() {
-  document.getElementById("idea3").style.display = "block";
-  document.getElementById("idea1").style.display = "none";
-  document.getElementById("idea2").style.display = "none";
-  document.getElementById("idea4").style.display = "none";
-  document.getElementById("idea5").style.display = "none";
-}
-
-function showIdea4() {
-  document.getElementById("idea4").style.display = "block";
-  document.getElementById("idea1").style.display = "none";
-  document.getElementById("idea2").style.display = "none";
-  document.getElementById("idea3").style.display = "none";
-  document.getElementById("idea5").style.display = "none";
-}
-
-function showIdea5() {
-  document.getElementById("idea5").style.display = "block";
-  document.getElementById("idea1").style.display = "none";
-  document.getElementById("idea2").style.display = "none";
-  document.getElementById("idea3").style.display = "none";
-  document.getElementById("idea4").style.display = "none";
-}
-
-
-/* idea 4 */
-function ajouter() {
-  var color = document.getElementById("choice-color").value;
-  var shape = document.getElementById("choice-shape").value;
-  var length = document.getElementById("choice-length").value;
-
-  if (color == 0 || shape == 0 || length == 0) 
-  {
-      alert("Please enter correct information.");
-  }
-  else 
-  {   
-      var table = document.getElementById('table');
-      table.insertAdjacentHTML("beforeend", "<tr><td>"+color+"</td><td>"+shape+"</td><td>"+length+"</td></tr>");
-  }
-}
-
-function supprimer() {
-  var table = document.getElementById('table');
-  table.innerHTML = "";
-}

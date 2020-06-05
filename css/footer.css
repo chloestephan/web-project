@@ -48,9 +48,7 @@ iframe[seamless] {
 	font-weight: bold;
 	color:  #ffffff;
 	margin: 0 0 10px;
-  padding: 0;
-  
-  z-index: 2;
+  	padding: 0;
 }
 
 .footer-distributed p.footer-links a{
