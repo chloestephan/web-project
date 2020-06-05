@@ -83,18 +83,21 @@ box-sizing: border-box;
 
 /* button back to top */
 #top-button {
-    display: none;
-    display: right;
     border: none;
     outline: none;
+
     background-color: #bc2fcc;
+    opacity: 0.8;
     color: white;
+
     cursor: pointer;
+    width: 40px;
+    height: 35px;
     padding: 10px;
     border-radius: 4px;
 
     position: sticky;
-    bottom: 20px;
+    bottom: 10px;
 }
   
 #top-button:hover {
@@ -106,7 +109,6 @@ box-sizing: border-box;
     border-color:#bc2fcc;
 }
 
-
 @media screen and (max-width: 650px) {
 .column {
     width: 100%;
@@ -115,10 +117,7 @@ box-sizing: border-box;
 }
 
 
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-
-
 .card{
   position: relative;
   display: inline-block;
@@ -215,4 +214,11 @@ p {
     list-style: none;
     color: #fff;
     font-size: 18px;
+}
+
+/* media queries */
+@media screen and (prefers-reduced-motion: no-preference) {
+    html, body {
+      scroll-behavior: smooth;
+    }
 }

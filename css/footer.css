@@ -1,21 +1,21 @@
 /* ----------------------------- footer ----------------------------- */
-main {
-  min-height: 100hv;
-  background: white;
-  /* put on top */
-  position: relative;
-  font: 16px/1.4 system-ui, sans-serif;
-  padding: 2rem;
+html {
+	height: 100%;
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
-
+  
+main {
+  min-height: 100%;
+  background: white;
+  position: relative;
+  padding: 2rem;
+}
 /* ------ frame that gets the footer in the other pages ------ */
 iframe {
 	max-width: 100%;
-	/*height: 180px;*/
 }
   
 iframe[seamless] {
@@ -25,26 +25,26 @@ iframe[seamless] {
 }
 
 /* ------ whole footer ------ */
-.footer-distributed{
+.footer-distributed {
 	background: linear-gradient(-45deg,#f403d1,#64b5f6);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: normal 16px sans-serif;
+	font: normal 18px sans-serif;
 	padding: 45px 50px;
 }
 
 /* ------ left part of the footer ------ */
 .footer-distributed .footer-left p{
 	color:  white;
-	font-size: 16px;
+	font-size: 18px;
 	margin: 0;
 }
 
 /* links (Home, About, Your Turn!) - disposition + writing style */
 .footer-distributed p.footer-links{
-	font-size:18px;
+	font-size:20px;
 	font-weight: bold;
 	color:  #ffffff;
 	margin: 0 0 10px;
@@ -57,8 +57,7 @@ iframe[seamless] {
 	display:inline-block;
 	line-height: 1.8;
 	text-decoration: none;
-  color:  inherit;
-  z-index: 1;
+  	color:  inherit;
 }
 
 .footer-distributed p.footer-links a:hover{
@@ -69,23 +68,23 @@ iframe[seamless] {
 .footer-distributed .footer-right{
 	float: right;
 	margin-top: 6px;
-  max-width: 180px;
-  z-index: 1;
+  	max-width: 200px;
 }
 
 .footer-distributed .footer-right a{
 	display: inline-block;
-	width: 35px;
-	height: 35px;
+	width: 40px;
+	height: 38px;
 	background-color:  white;
-	border-radius: 2px;
+	border-radius: 4px;
 
-	font-size: 20px;
+	font-size: 25px;
 	color: black;
 	text-align: center;
 	line-height: 35px;
 
 	margin-left: 3px;
+	padding-top: 3px;
 }
 
 .footer-distributed .footer-right a:hover {

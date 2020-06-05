@@ -15,7 +15,6 @@ body {
 	box-sizing:border-box;
 	box-shadow: 0 0 7px 0 hsla(0, 0%, 0%, 0.15);
 	height: 80px;
-	/*background-color: #d87093;*/
 	background: linear-gradient(-45deg,#f403d1,#64b5f6);
 }
 
@@ -31,11 +30,11 @@ body {
 	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
 	line-height: 40px;
 	margin: 0;
-	color:#f403d1;
 }
 
 .header .header-container h1 span {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	text-shadow: 1px 1px 1px #f403d1;
 }
 
 /* The header links */
@@ -48,6 +47,7 @@ body {
 	font:18px Arial, Helvetica, sans-serif;
 	line-height: 40px;
 	float: right;
+	text-shadow: 1px 1px 1px lightgrey;
 }
 
 .header .header-container nav a{

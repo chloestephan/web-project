@@ -93,18 +93,21 @@ h5 {
 
 /* button back to top */
 #top-button {
-    display: none;
-    display: right;
     border: none;
     outline: none;
+
     background-color: #bc2fcc;
+    opacity: 0.8;
     color: white;
+
     cursor: pointer;
+    width: 40px;
+    height: 35px;
     padding: 10px;
     border-radius: 4px;
 
     position: sticky;
-    bottom: 20px;
+    bottom: 10px;
 }
   
 #top-button:hover {
@@ -115,7 +118,6 @@ h5 {
     border-style:solid;
     border-color:#bc2fcc;
 }
-
 
 /* write in the texts */
 p { 
@@ -144,6 +146,8 @@ img {
     text-align: center;
 }
 
+
+/* media queries */
 @media screen and (max-width:600px) {
     .column {
         width: 100%;
@@ -160,8 +164,6 @@ img {
     }
 }
 
-
-/* media queries */
 @media screen and (max-width:1200px) {
     .column {
         width: 100%;
@@ -178,3 +180,8 @@ img {
     }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+    html, body {
+      scroll-behavior: smooth;
+    }
+}

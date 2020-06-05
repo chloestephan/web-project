@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-body {
-    scroll-behavior: smooth;
-}
-
 .banniere {   
     height: auto;
     width: 100%;
@@ -37,8 +33,6 @@ h2 {
 
     text-shadow: 3px 2px 1px rgba(188,47,204,0.9);
 }
-
-
 
 h3 { 
     color: #33383b; 
@@ -92,19 +86,23 @@ hr {
 }
 
 /* button back to top */
+
 #top-button {
-    display: none;
-    display: right;
     border: none;
     outline: none;
+
     background-color: #bc2fcc;
+    opacity: 0.8;
     color: white;
+
     cursor: pointer;
+    width: 40px;
+    height: 35px;
     padding: 10px;
     border-radius: 4px;
 
     position: sticky;
-    bottom: 20px;
+    bottom: 10px;
 }
   
 #top-button:hover {
@@ -139,3 +137,8 @@ hr {
     }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+    html, body {
+      scroll-behavior: smooth;
+    }
+}
