@@ -20,6 +20,7 @@ h2 {
     letter-spacing: -1px; 
     line-height: 1; 
     text-align: center; 
+    text-shadow: 3px 2px 1px rgba(188,47,204,0.9);
 }
 
 h3 { 
@@ -67,6 +68,10 @@ hr {
     float: left;
     width: 50%;
     padding-top: 20px;
+    padding: 20px;
+}
+
+.column p {
     padding: 20px;
 }
   

@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 .banniere {   
     height: auto;
     width: 100%;
@@ -30,7 +34,10 @@ h2 {
     letter-spacing: -1px; 
     line-height: 1; 
     text-align: center; 
+
+    text-shadow: 3px 2px 1px rgba(188,47,204,0.9);
 }
+
 
 
 h3 { 
@@ -108,11 +115,6 @@ hr {
     border-style:solid;
     border-color:#bc2fcc;
 }
-
-iframe {
-    z-index: 10;
-}
-
 
 /* media queries */
 @media screen and (max-width: 600px) {
