@@ -65,14 +65,26 @@ hr {
     margin-bottom: 5px;
 }
 
+.banniere {   
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
 /* button back to top */
 #top-button {
     border: none;
     outline: none;
 
-    background-color: #bc2fcc;
+    color: #bc2fcc;
+    background-color: white;
     opacity: 0.8;
-    color: white;
+
+    border-width:2px;
+    border-style:solid;
+    border-color:#bc2fcc;
+    
 
     cursor: pointer;
     width: 40px;
@@ -87,20 +99,10 @@ hr {
 }
   
 #top-button:hover {
-    color: #bc2fcc;
-    background-color: white;
-
-    border-width:2px;
-    border-style:solid;
-    border-color:#bc2fcc;
+    color: white;
+    background-color: #bc2fcc;
 }
 
-.banniere {   
-    height: auto;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-}
 
 @media screen and (max-width:600px) {
     img {

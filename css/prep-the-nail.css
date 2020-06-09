@@ -96,9 +96,14 @@ h5 {
     border: none;
     outline: none;
 
-    background-color: #bc2fcc;
+    color: #bc2fcc;
+    background-color: white;
     opacity: 0.8;
-    color: white;
+
+    border-width:2px;
+    border-style:solid;
+    border-color:#bc2fcc;
+    
 
     cursor: pointer;
     width: 40px;
@@ -113,12 +118,8 @@ h5 {
 }
   
 #top-button:hover {
-    color: #bc2fcc;
-    background-color: white;
-
-    border-width:2px;
-    border-style:solid;
-    border-color:#bc2fcc;
+    color: white;
+    background-color: #bc2fcc;
 }
 
 /* write in the texts */

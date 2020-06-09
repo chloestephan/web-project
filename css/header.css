@@ -16,6 +16,7 @@ body {
 	box-shadow: 0 0 7px 0 hsla(0, 0%, 0%, 0.15);
 	height: 80px;
 	background: linear-gradient(-45deg,#f403d1,#64b5f6);
+	box-shadow: 0 4px 2px -2px gray;
 }
 
 .header .header-container {

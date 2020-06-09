@@ -15,46 +15,55 @@ img {
     max-width: 100%;
 }
 
+p {
+    color: black; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 18px; 
+    line-height: 24px; 
+    margin: 0 0 24px; 
+    text-align: justify; 
+    text-justify: center;
+}
+
 /* ------------------ Top div in the index page -------------------*/
-/*.gradient-text {
-	height: 100%;
-	background: linear-gradient(to bottom, #7927b2, #fb3182);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-.gradient-text .container{
-	height: 400px;
-	max-width: 100%;
-	margin: 0 auto;
-	padding: 30px;
-	background: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.gradient-text p {
-	font-size: 70px;
-	font-weight: bold;
-	background: linear-gradient(to right, #7927b2, #fb3182);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	max-width: 350px;
-	text-transform: uppercase;
-	line-height: .77;
-	font-family: 'Verdana', sans-serif;
-}*/
-
 .intro-photo {
-    width: 92%;
-    margin-left: 4%;
-    margin-right: 4%;
+    width: 100%;
+    /*margin-left: 4%;
+    margin-right: 4%;*/
     box-shadow: 3px 3px lightgray;
 }
+
+/* section separator */
+h3 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    text-shadow: 1px 1px 1px #f403d1;
+
+    color: #111; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 40px; 
+    font-weight: 300; 
+    line-height: 32px; 
+    text-align: center; 
+}
+
+.hr-index {
+    display: block;
+    height: 1px;
+    width: 15%;
+    border: 0;
+    border-radius: 3em;
+    border-top: 4px solid #f403d1;
+    margin: 1em 0;
+    padding: 0;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 42.5%;
+}
+
+
 
 /* ----------------------------- body ----------------------------- */
 /* Create three equal columns that floats next to each other */
@@ -242,7 +251,7 @@ h2 span {
 
 .box {
     width: 600px;
-    height: 550px;
+    height: 580px;
 
     margin-bottom: 10px;
     margin-left: 60px;
@@ -250,9 +259,9 @@ h2 span {
     border-width: 1px;
     border-style: solid;
     border-collapse: collapse;
-    border-color: #33383b;
+    border-color: black;
 
-    box-shadow: 3px 3px lightgray;
+    box-shadow: 2px 2px lightgray;
 }
 
 .box .image.fit {
@@ -314,9 +323,14 @@ h2 span {
     border: none;
     outline: none;
 
-    background-color: #bc2fcc;
+    color: #bc2fcc;
+    background-color: white;
     opacity: 0.8;
-    color: white;
+
+    border-width:2px;
+    border-style:solid;
+    border-color:#bc2fcc;
+    
 
     cursor: pointer;
     width: 40px;
@@ -331,12 +345,8 @@ h2 span {
 }
   
 #top-button:hover {
-    color: #bc2fcc;
-    background-color: white;
-
-    border-width:2px;
-    border-style:solid;
-    border-color:#bc2fcc;
+    color: white;
+    background-color: #bc2fcc;
 }
 
 /* media queries */
