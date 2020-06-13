@@ -1,17 +1,4 @@
-/* -------------------- for the page overall --------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ------------------ Top photo in the index page -------------------*/
-.front-photo{
-    max-width: 100%;
-    height: auto;
-}
-
-/* ----------------------------- body ----------------------------- */
+/* ------ BODY ------ */
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
@@ -33,20 +20,11 @@
     height: 200px;
 }
 
-/* line that separates the header with the main part of the page */
+/* ------ TITLES ------ */ 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-radius: 3em;
-    border-top: 3px solid #bc2fcc;
-    margin: 1em 0;
-    padding: 0;
-    margin-top: 30px;
     margin-bottom: -20px;
 }
 
-/* write titles */
 h2 { 
     color: #111; 
     font-family: 'Helvetica Neue', sans-serif; 
@@ -58,7 +36,6 @@ h2 {
 
     text-shadow: 3px 2px 1px rgba(188,47,204,0.9);
 }
-
 
 h3 { 
     color: #111; 
@@ -77,7 +54,7 @@ h4 {
     font-family: 'Open Sans', sans-serif; 
     font-size: 30px; 
     font-weight: 300; 
-    margin-top: 10px;
+    margin-top: 30px;
     text-decoration: underline #bc2fcc;
 }
 
@@ -91,38 +68,7 @@ h5 {
     text-align: center; 
 }
 
-/* button back to top */
-#top-button {
-    border: none;
-    outline: none;
-
-    color: #bc2fcc;
-    background-color: white;
-    opacity: 0.8;
-
-    border-width:2px;
-    border-style:solid;
-    border-color:#bc2fcc;
-    
-
-    cursor: pointer;
-    width: 40px;
-    height: 35px;
-    padding: 10px;
-    border-radius: 4px;
-
-    position: sticky;
-    bottom: 10px;
-
-    margin-left: 97%;
-}
-  
-#top-button:hover {
-    color: white;
-    background-color: #bc2fcc;
-}
-
-/* write in the texts */
+/* ------ TEXTS ------ */
 p { 
     color: #111;
     font-family: 'Helvetica Neue', sans-serif; 
@@ -133,25 +79,14 @@ p {
     text-justify: inter-word; 
 }
 
+/* ------ IMAGES ------ */
 img {   
     height: auto;
     width: 100%;
     max-width: 600px;
 }
 
-.banniere {   
-    height: auto;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-}
-
-.align-center {
-    text-align: center;
-}
-
-
-/* media queries */
+/* ------ MEDIA QUERIES ------ */
 @media screen and (max-width:600px) {
     .column {
         width: 100%;
@@ -184,8 +119,3 @@ img {
     }
 }
 
-@media screen and (prefers-reduced-motion: no-preference) {
-    html, body {
-      scroll-behavior: smooth;
-    }
-}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset='utf-8'>
+
+        <script src="https://kit.fontawesome.com/e6d58530a8.js" crossorigin="chloe-romy"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/header.css"/>
+        <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+        <link rel="stylesheet" type="text/css" href="css/general.css"/>
+
+        <link rel="stylesheet" type="text/css" href="css/a-vous-de-jouer.css"/>
+        
+        <title>Chloe and Romy's corner</title>
+        
+    </head>
+
+    <header class="header">
+        <div class="header-container">
+            <h1><a href="index.html">Chloe and Romy's <span>corner</span></a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="prep-the-nail.html">Prep the nail</a>
+                <a href="acrylic.html">Acrylic</a>
+                 
+                <a href="polygel.html">Polygel</a>
+                <a href="fibre-de-verre.html">Fiberglass</a>
+                <a href="semi-permanent.html">Semi permanent</a>
+                <a href=" a-vous-de-jouer.html" class="selected">Your turn !</a>
+            </nav>
+        </div>
+    </header>
+
+    <body>
+        <main id="main">
+            <h2>Your turn !</h2>
+            <hr>
+
+            <div id="memory-game">
+                <div class="container">
+                    <header>
+                        <h3>Memory Game</h3>
+                    </header>
+            
+                    <section class="score-panel">
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span class="moves">0</span> Move(s)
+            
+                        <div class="timer"></div>
+                        <div class="restart" onclick=startGame()>
+                            <i class="fa fa-repeat"></i>
+                        </div>
+                    </section>
+            
+                    <ul class="deck" id="card-deck">
+                        <li class="card" type="hand-peace">
+                            <i class="fa fa-hand-peace-o"></i>
+                        </li>
+                        <li class="card" type="hand-spock">
+                            <i class="fa fa-hand-spock-o"></i>
+                        </li>
+                        <li class="card match" type="paint-brush">
+                            <i class="fa fa-paint-brush"></i>
+                        </li>
+                        <li class="card" type="smile" >
+                            <i class="fa fa-smile-o"></i>
+                        </li>
+                        <li class="card" type="copyright">
+                            <i class="fa fa-copyright"></i>
+                        </li>
+                        <li class="card match" type="paint-brush">
+                            <i class="fa fa-paint-brush"></i>
+                        </li>
+                        <li class="card" type="paw">
+                            <i class="fa fa-paw"></i>
+                        </li>
+                        <li class="card" type="registered">
+                            <i class="fa fa-registered"></i>
+                        </li>
+                        <li class="card" type="hand-peace">
+                            <i class="fa fa-hand-peace-o"></i>
+                        </li>
+                        <li class="card" type="giveustwentyplz" id ="giveustwentyplz">
+                            <p>(give us 20 plz)</p>
+                        </li>
+                        <li class="card" type="paw">
+                            <i class="fa fa-paw"></i>
+                        </li>
+                        <li class="card" type="giveustwentyplz" id ="giveustwentyplz">
+                            <p>(give us 20 plz)</p>
+                        </li>
+                        <li class="card open show" type="smile">
+                            <i class="fa fa-smile-o"></i>
+                        </li>
+                        <li class="card" type="registered">
+                            <i class="fa fa-registered"></i>
+                        </li>
+                        <li class="card" type="hand-spock">
+                            <i class="fa fa-hand-spock-o"></i>
+                        </li>
+                        <li class="card" type="copyright">
+                            <i class="fa fa-copyright"></i>
+                        </li>
+                    </ul>
+            
+                    <div id="pop-up" class="overlay">
+                        <div class="popup">
+                            <h2>Congratulations</h2>
+                            <a class="close" href=#>×</a>
+                            <div class="content-1">
+                                Congrats, you made it!
+                            </div>
+                            <div class="content-2">
+                                <p>You used <span id=finalMove> </span> moves</p><p>in <span id=totalTime> </span> </p>
+                                <p>Rating:  <span id=starRating></span></p>
+                            </div>
+                            <button id="play-again"onclick="playAgain()">Play again !</a></button>
+                        </div>
+                    </div>
+            
+                </div>
+                    
+            </div>
+            <button onclick="topFunction()" id="top-button" title="back-to-top"><i class="fa fa-angle-up"></i></button>
+        </main>    
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+
+    <div id="footer">
+        <iframe id="footer" src="footer.html" seamless scrolling="no"></iframe>
+    </div>    
+
+    <script type="text/javascript" src="js/top-button.js"></script>
+
+</html>

@@ -1,143 +1,314 @@
-/* -------------------- for the page overall --------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ------ FOR THE PAGE OVERALL ------ */
+#top-button {
+	transform: scale(0.6);
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
+#top-button i {
+	transform: scale(1.5);
 }
 
-main {
-    background: #ffffff;
-    min-height: 491px;
+/* ------ MEMORY GAME ------ */
+*, *::before, *::after {
+	box-sizing: inherit;
 }
 
-.banniere {   
-    height: auto;
-    width: 100%;
-    max-width: 100%;
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 100%;
+	font-size: 20px;
+	text-align: center;
 }
 
-.align-center {
-    text-align: center;
+h3 {
+    font-family: consolas;
+    font-size: 50px;
+    text-shadow: 2px 1.5px 1px #f403d1;
 }
 
-/* write titles */
-h2 { 
-    color: #111; 
-    font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 100px; 
-    font-weight: bold; 
-    letter-spacing: -1px; 
-    line-height: 1; 
-    text-align: center; 
-    text-shadow: 3px 2px 1px rgba(188,47,204,0.9);
+/* --- deck of cards --- */
+.deck {
+	width: 85%;
+	background: linear-gradient(-45deg,#f403d1,#64b5f6);
+	padding: 1rem;
+	border-radius: 4px;
+	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 0 3em;
 }
 
-h3 { 
-    color: #bc2fcc; 
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 30px; 
-    font-weight: 300; 
-    line-height: 0.1em;
-    margin: 30px 0 30px;
-    text-align: center; 
-
-    width: 100%;
-    border-bottom: 2px solid #33383b; 
-}
- 
-h3 span { 
-    background:#fff; 
-    padding:0 10px; 
+.deck .card {
+	height: 3.7rem;
+	width: 3.7rem;
+	margin: 0.2rem 0.2rem;
+	background: black;
+	font-size: 0;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
 
-/* write in the texts */
-p { 
-    color: #111;
-    font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 25px; 
-    line-height: 24px; 
-    margin: 0 0 24px; 
-    text-align: center; 
-    text-justify: inter-word; 
+.deck .card.open {
+	transform: rotateY(0);
+	background: #02b3e4;
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-radius: 3em;
-    border-top: 3px solid #bc2fcc;
-    margin: 1em 0;
-    padding: 0;
-    margin-top: 30px;
-    margin-bottom: 5px;
+.deck .card.show {
+	font-size: 33px;
 }
 
-button {   
-    padding: 10px;
-    background: #bc2fcc;
-    border: none;
-    outline: none;
-
-    font-size: 18px;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    margin-bottom: 15px;
+.deck .card.match {
+	cursor: default;
+	background: #5df720;
+	font-size: 33px;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
 }
 
-/* --------------- MOVING DIVISION ---------------  */
-#moving-div {
-    position: absolute;
-    z-index: 9;
-    background-color: #f1f1f1;
-    border: 1px solid #d3d3d3;
-    text-align: center;
+.deck .card.unmatched {
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+	background: #e2043b;
+}
+
+.deck .card.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}
+
+/* --- score panel --- */
+.score-panel {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.score-panel .stars {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+	list-style: none;
+	display: inline-block;
+}
+
+.score-panel .restart {
+	float: right;
+	cursor: pointer;
+}
+
+.fa-star {
+	color: #FFD700;
+}
+
+.timer {
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+/* --- congratulations pop-up ---*/
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
 }
   
-#moving-display {
-    padding: 10px;
-    cursor: move;
-    z-index: 10;
-    background-color: #bc2fcc;
-    color: #fff;
-}
-
-#mydiv {
-    position: absolute;
-    z-index: 9;
-    background-color: #f1f1f1;
-    border: 1px solid #d3d3d3;
-    text-align: center;
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	width: 85%;
+	position: relative;
+	transition: all 5s ease-in-out;
+	font-family: 'Gloria Hallelujah', cursive;
 }
   
-#mydivheader {
-    padding: 10px;
-    cursor: move;
-    z-index: 10;
-    background-color: #2196F3;
-    color: #fff;
+.popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
 }
 
-/* --------------- GUESSING GAME --------------- */
-/* TODO: center horizontally*/
-#submitguess {
-    padding: 10px;
-    background: #bc2fcc;
-    border: none;
-    outline: none;
-
-    font-size: 18px;
-    text-transform: uppercase;
-    cursor: pointer;
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
 }
 
-#guessField {
-    height: 35px;
+.popup .close:hover {
+	color: #bc2fcc;
+}
+
+.popup .content-1, .content-2 {
+	max-height: 30%;
+	overflow: auto;
+	text-align: center;
+}
+
+.show {
+	visibility: visible !important;
+	opacity: 100 !important;
+}
+
+#starRating li {
+	display: inline-block;
+}
+
+#play-again {
+	background-color: #141214;
+	padding: 0.7rem 1rem;
+	font-size: 1.1rem;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	font-family: 'Gloria Hallelujah', cursive;
+	color: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* --- animations --- */
+
+/* returns the card as if it flips */
+@keyframes flipInY {
+	from {
+		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+
+	40% {
+		transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+		animation-timing-function: ease-in;
+	}
+
+	60% {
+		transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+		opacity: 1;
+	}
+
+	80% {
+		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+	}
+
+	to {
+		transform: perspective(400px);
+	}
+}
+
+/* when two returned cards match, make the card 'jump' like a rubberband that expands */
+@keyframes rubberBand {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, .95, 1);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+/* when two returned cards don't match, they 'pulse' before being returned again */
+@keyframes pulse {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		transform: scale3d(1.2, 1.2, 1.2);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+/* ------ MEDIA QUERIES ------ */
+@media (max-width: 320px) {
+	.deck {
+		width: 85%;
+	}
+
+	.deck .card {
+		height: 4.7rem;
+		width: 4.7rem;
+	}
+}
+
+/* --- for tablets and larger screens --- */
+
+@media (min-width: 768px) {
+	.container {
+		font-size: 22px;
+	}
+
+	.deck {
+		width: 660px;
+		height: 680px;
+	}
+
+	.deck .card {
+		height: 125px;
+		width: 125px;
+	}
+
+	.popup {
+		width: 60%;
+	}
 }

@@ -1,27 +1,4 @@
-/* -------------------- for the page overall --------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.banniere {   
-    height: auto;
-    width: 100%;
-    max-width: 100%;
-}
-
-#photo-row {
-    background-image: url("../img/polygel/polygel.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-color: #cccccc;
-    height: 500px;
-    width: 100%;
-}
-
-/* write titles */
+/* ------ TITLES ------ */
 h2 { 
     color: #111; 
     font-family: 'Helvetica Neue', sans-serif; 
@@ -30,7 +7,6 @@ h2 {
     letter-spacing: -1px; 
     line-height: 1; 
     text-align: center; 
-
     text-shadow: 3px 2px 1px rgba(188,47,204,0.9);
 }
 
@@ -52,7 +28,7 @@ h3 span {
     padding:0 10px; 
 }
 
-/* write in the texts */
+/* ------ TEXTS ------ */
 p { 
     color: #111;
     font-family: 'Helvetica Neue', sans-serif; 
@@ -65,62 +41,16 @@ p {
     margin-right: 180px;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-radius: 3em;
-    border-top: 3px solid #bc2fcc;
-    margin: 1em 0;
-    padding: 0;
-    margin-top: 30px;
-    margin-bottom: 5px;
-}
-
+/* ------ DISPLAY ------ */
 .polygel-photo {
     max-width: 100%;
-}
-
-.align-center {
-    text-align: center;
 }
 
 .youtube {
     margin-bottom: 18px;
 }
 
-/* button back to top */
-#top-button {
-    border: none;
-    outline: none;
-
-    color: #bc2fcc;
-    background-color: white;
-    opacity: 0.8;
-
-    border-width:2px;
-    border-style:solid;
-    border-color:#bc2fcc;
-    
-
-    cursor: pointer;
-    width: 40px;
-    height: 35px;
-    padding: 10px;
-    border-radius: 4px;
-
-    position: sticky;
-    bottom: 10px;
-
-    margin-left: 97%;
-}
-  
-#top-button:hover {
-    color: white;
-    background-color: #bc2fcc;
-}
-
-/* media queries */
+/* ------ MEDIA QUERIES ------ */
 @media screen and (max-width: 600px) {
     h3 {
         line-height: 1.5em;
@@ -140,11 +70,5 @@ hr {
 
     p {
         margin: 10px;
-    }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-    html, body {
-      scroll-behavior: smooth;
     }
 }

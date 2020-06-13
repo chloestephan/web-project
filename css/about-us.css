@@ -1,0 +1,204 @@
+/* ------ OVERALL ------ */
+
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* ------ TITLES ------ */
+h2 { 
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 100px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center; 
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+h6 {
+    font-size: 50px;
+    margin-top: -10px;
+
+    font-weight: 300; 
+    line-height: 0.1em;
+    margin: 30px 0 30px;
+    text-align: center; 
+
+    width: 100%;
+    border-bottom: 2px solid #232943; 
+}
+
+h6 span {
+    background:#fff; 
+    padding:0 10px; 
+}
+
+p {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* ------ OUR PROJECT ------ */
+.about {
+    background: url(pic.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: white;
+    overflow: hidden;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+.inner-container {
+    width: 55%;
+    float: right;
+    background-color: #f8f8f8;
+    padding: 135px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 20px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* ------ EACH PERSON'S PRESENTATION ------ */
+/* overall look of the part */
+.card {
+    position: relative;
+    display: inline-block;
+    max-width: 700px;
+    min-height: 860px;
+    height: auto;
+    background: linear-gradient(45deg,#f403d1,#64b5f6);
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+    padding: 40px 20px;
+    box-shadow: 0 10px 15px lightgrey;
+}
+
+.title .fa {
+    color:white;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius:  50%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 10px 10px lightgrey;
+}
+
+.title h2 {
+    position: relative;
+    margin: 20px  0 0;
+    padding: 0;
+    color: white;
+    font-size: 28px;
+}
+
+.name, .description {
+    position: relative;
+}
+
+.name h4 {
+    margin: 0;
+    padding: 20px 0 ;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+}
+
+.description ul {
+    margin: 0;
+    padding: 0;
+}
+
+.description ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* linkedin button */
+.card a {
+    position: relative;
+    background: white;
+    color : black;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px auto 0 ;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.card a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* ------ MEDIA QUERIES ------ */
+@media screen and (max-width:1200px){
+    .inner-container {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about {
+        padding: 0;
+    }
+    .inner-container {
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+.column {
+    width: 100%;
+    display: block;
+    }
+}

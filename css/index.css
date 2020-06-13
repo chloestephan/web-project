@@ -1,15 +1,4 @@
-/* -------------------- for the page overall --------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main {
-    padding: 300px;
-    font-family: 'Helvetica Neue', sans-serif; 
-}
-
+/* ------ for the page overall ------ */
 img {   
     height: auto;
     max-width: 100%;
@@ -25,26 +14,24 @@ p {
     text-justify: center;
 }
 
-/* ------------------ Top div in the index page -------------------*/
+/* ------ TOP DIV ------ */
 .intro-photo {
     width: 100%;
-    /*margin-left: 4%;
-    margin-right: 4%;*/
     box-shadow: 3px 3px lightgray;
 }
 
-/* section separator */
+/* ------ SECTION SEPARATOR ------ */
 h3 {
     margin-top: 50px;
     margin-bottom: 40px;
-
+    
+    line-height: 32px; 
+    font-family: 'Open Sans', sans-serif; 
+    color: #111; 
     text-shadow: 1px 1px 1px #f403d1;
 
-    color: #111; 
-    font-family: 'Open Sans', sans-serif; 
     font-size: 40px; 
     font-weight: 300; 
-    line-height: 32px; 
     text-align: center; 
 }
 
@@ -63,9 +50,7 @@ h3 {
     margin-left: 42.5%;
 }
 
-
-
-/* ----------------------------- body ----------------------------- */
+/* ------ BODY ------ */
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
@@ -85,8 +70,8 @@ h3 {
     text-align: left;
 }
 
-/* ------------------ writing styles ------------------ */
-h2 {
+/* ------ WRITING ------ */
+h4 {
     width: 100%; 
     font-size: 25px;
     text-align: center; 
@@ -95,24 +80,18 @@ h2 {
     margin: 10px 0 20px; 
 } 
  
-h2 span { 
+h4 span { 
     background:#fff; 
     padding:0 10px; 
 }
 
-/* overall text */
-
-.align-center {
-    text-align: center;
-}
-
-/* ------------------ BUTTONS --------------------- */
+/* ------ BUTTONS ------ */
 /* buttons "GO TO PAGE" */
 .button {
     display: inline-block;
     text-decoration: none;
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -218,7 +197,7 @@ h2 span {
     height: 2px;
 }
 
-/* social media buttons in main */
+/* ------ social media buttons ------ */
 .fa-index {
     padding-top: 10px;
     padding-right: 15px;
@@ -246,9 +225,8 @@ h2 span {
     padding-right: 20px;
 }
 
-/* -------------------- article divisions --------------------- */
-/* Box */
-
+/* ------ article divisions ------ */
+/* each article's presentation */
 .box {
     width: 600px;
     height: 580px;
@@ -278,8 +256,7 @@ h2 span {
     padding: 3rem;
 }
 
-/* Image in box */
-
+/* ------ images in box ------ */
 .image {
     border: 0;
     display: inline-block;
@@ -318,38 +295,7 @@ h2 span {
     width: 100%;
 }
 
-/* button back to top */
-#top-button {
-    border: none;
-    outline: none;
-
-    color: #bc2fcc;
-    background-color: white;
-    opacity: 0.8;
-
-    border-width:2px;
-    border-style:solid;
-    border-color:#bc2fcc;
-    
-
-    cursor: pointer;
-    width: 40px;
-    height: 35px;
-    padding: 10px;
-    border-radius: 4px;
-
-    position: sticky;
-    bottom: 10px;
-
-    margin-left: 97%;
-}
-  
-#top-button:hover {
-    color: white;
-    background-color: #bc2fcc;
-}
-
-/* media queries */
+/* ------ MEDIA QUERIES ------ */
 @media screen and (max-width: 600px) {
     .intro-photo {
         width: 100%;
@@ -399,14 +345,4 @@ h2 span {
         margin: auto;
     }
 
-    /*.fa-index {
-        display: inline-block;
-        width: 15px;
-    }*/
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-    html, body {
-      scroll-behavior: smooth;
-    }
 }
